@@ -5,3 +5,7 @@ A big part of this is that I personally want to use this because I am tired of d
 
 ## Purpose
 This is something that could be created through Excel only. The goal is to develop an application by myself to explore the softeare engineering process by following the guidelines of the ECSE 321 McGill Software Engineering course.
+
+
+## More info
+[Link to Wiki](https://github.com/paulkevorkov/fund-split/wiki) 
