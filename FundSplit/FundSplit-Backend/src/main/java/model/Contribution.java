@@ -1,12 +1,22 @@
 package model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+
+@Entity
 public class Contribution {
-  
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
+
     private String title;
     private double amount;
     private String description; 
 
+    @ManyToOne
     private Sponsor sponsor;
 
     public Contribution(int id, String title, double amount, String description, Sponsor sponsor) {

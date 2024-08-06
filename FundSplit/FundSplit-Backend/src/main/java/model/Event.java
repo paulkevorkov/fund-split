@@ -1,14 +1,23 @@
 package model;
 
 import java.sql.Date;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 
+@Entity
 public class Event {
-      
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
+    
     private String title;
     private Date date;
     private boolean isFavorite;
     
+    @ManyToOne
     private AppUser appUser;
 
     public Event() {
