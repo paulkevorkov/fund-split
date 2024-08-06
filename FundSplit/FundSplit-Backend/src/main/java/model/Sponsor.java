@@ -21,8 +21,7 @@ public class Sponsor {
     public Sponsor(){
     }
 
-    public Sponsor(int id, String name, Event event) {
-        this.id = id;
+    public Sponsor(String name, Event event) {
         this.name = name;
         this.event = event;
     }

@@ -19,8 +19,7 @@ public class Contribution {
     @ManyToOne
     private Sponsor sponsor;
 
-    public Contribution(int id, String title, double amount, String description, Sponsor sponsor) {
-        this.id = id;
+    public Contribution(String title, double amount, String description, Sponsor sponsor) {
         this.title = title;
         this.amount = amount;
         this.description = description;

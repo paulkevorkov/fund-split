@@ -23,8 +23,12 @@ public class Event {
     public Event() {
     }
 
-    public Event(int id, String title, Date date, boolean isFavorite) {
-        this.id = id;
+    public Event(String title, Date date){
+        this.title = title;
+        this.date = date;
+    }
+
+    public Event(String title, Date date, boolean isFavorite) {
         this.title = title;
         this.date = date;
         this.isFavorite = isFavorite;

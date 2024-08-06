@@ -20,8 +20,11 @@ public class AppUser{
     public AppUser() {
     }
 
-    public AppUser(int id, String name, String phoneNb, String password) {
-        this.id = id;
+    public AppUser(String name){
+        this.name = name;
+    }
+
+    public AppUser(String name, String phoneNb, String password) {
         this.name = name;
         this.phoneNb = phoneNb;
         this.password = password;
