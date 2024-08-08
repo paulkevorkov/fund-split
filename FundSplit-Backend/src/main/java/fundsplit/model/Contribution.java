@@ -1,5 +1,7 @@
 package fundsplit.model;
 
+import java.time.LocalDateTime;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
@@ -15,15 +17,17 @@ public class Contribution {
     private String title;
     private double amount;
     private String description; 
+    private LocalDateTime localDateTime;
 
     @ManyToOne
     private Sponsor sponsor;
 
-    public Contribution(String title, double amount, String description, Sponsor sponsor) {
+    public Contribution(String title, double amount, String description, Sponsor sponsor, LocalDateTime localDateTime) {
         this.title = title;
         this.amount = amount;
         this.description = description;
         this.sponsor = sponsor;
+        this.localDateTime = localDateTime;
     }
 
     public int getId() {
@@ -69,5 +73,13 @@ public class Contribution {
             wasSet = true;
         }
         return wasSet;
+    }
+
+    public LocalDateTime getDate() {
+        return this.localDateTime;
+    }
+
+    public void setDate(LocalDateTime localDateTime) {
+        this.localDateTime = localDateTime;
     }
 }

@@ -1,6 +1,6 @@
 package fundsplit.model;
 
-import java.sql.Date;
+import java.time.LocalDateTime;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
@@ -14,7 +14,7 @@ public class Event {
     private int id;
     
     private String title;
-    private Date date;
+    private LocalDateTime localDateTime;
     private boolean isFavorite;
     
     @ManyToOne
@@ -23,14 +23,14 @@ public class Event {
     public Event() {
     }
 
-    public Event(String title, Date date){
+    public Event(String title, LocalDateTime localDateTime){
         this.title = title;
-        this.date = date;
+        this.localDateTime = localDateTime;
     }
 
-    public Event(String title, Date date, boolean isFavorite) {
+    public Event(String title, LocalDateTime localDateTime, boolean isFavorite) {
         this.title = title;
-        this.date = date;
+        this.localDateTime = localDateTime;
         this.isFavorite = isFavorite;
         /*if(!setAppUser(AppUser aAppUser)){
             throw new RuntimeExeption("No app user to create an event");
@@ -53,12 +53,12 @@ public class Event {
         this.title = title;
     }
 
-    public Date getDate() {
-        return this.date;
+    public LocalDateTime getDate() {
+        return this.localDateTime;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setDate(LocalDateTime localDateTime) {
+        this.localDateTime = localDateTime;
     }
 
     public boolean isIsFavorite() {
