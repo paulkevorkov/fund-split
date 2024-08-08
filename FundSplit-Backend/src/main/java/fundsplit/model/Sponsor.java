@@ -1,4 +1,4 @@
-package model;
+package fundsplit.model;
 
 
 import jakarta.persistence.Entity;

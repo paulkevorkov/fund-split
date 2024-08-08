@@ -1,4 +1,4 @@
-package model;
+package fundsplit.model;
 
 import java.sql.Date;
 import jakarta.persistence.Entity;

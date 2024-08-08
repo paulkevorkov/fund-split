@@ -1,4 +1,4 @@
-package dao;
+package fundsplit.dao;
 
 import jakarta.persistence.EntityManager;
 //import jakarta.persistence.TypedQuery;
@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import model.AppUser;
-import model.Event;
+import fundsplit.model.AppUser;
+import fundsplit.model.Event;
 
 import java.sql.Date;
 
